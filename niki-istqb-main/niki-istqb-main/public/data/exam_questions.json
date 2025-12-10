@@ -21,7 +21,6 @@
     "type": "single",
     "options": [
       "A tesztelőket bevonjuk a különböző szoftverfejlesztési életciklus (SDLC) tevékenységekbe és ez segít a munkatermékek hibáinak észlelésében.",
-      "sdg",
       "A tesztelők igyekeznek nem zavarni a fejlesztőket kódolás közben, hogy azok jobb kódot írjanak.",
       "A tesztelők együttműködnek a végfelhasználókkal a hibajelentések minőségének javításában a komponens integrációs tesztelés a rendszertesztelés során.",
       "A minősített tesztelők sokkal jobb teszteseteket terveznek, mint a nem minősített tesztelők."
