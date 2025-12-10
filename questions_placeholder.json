@@ -724,10 +724,10 @@
     "id": 73,
     "statement": "Jelölje az igaz állításokat!",
     "options": [
-      {"text": "UML szimbóluma egy téglalap, amelynek bal oldalát két kisebb téglalap metszi.", "correct": false},
+      {"text": "UML szimbóluma egy téglalap, amelynek bal oldalát két kisebb téglalap metszi.", "correct": true},
       {"text": "Egy komponensben csak egy implementációs osztály valósulhat meg, vagy számos tervezési osztály.", "correct": false},
       {"text": "UML szimbóluma egy téglalap, amelynek jobb felső sarkát körbe írt paraméter jellemezheti.", "correct": false},
-      {"text": "Egy komponensben számos implementációs osztály valósulhat meg.", "correct": false}
+      {"text": "Egy komponensben számos implementációs osztály valósulhat meg.", "correct": true}
     ]
   },
   {
@@ -761,7 +761,120 @@
       {"text": "A telepítési diagram minden egyes csomópontja (node) valamilyen számítási feldolgozási egységet képvisel, egyszoftver vagy egy hardver elemet. A hardver lehet egy kisebb egység, de lehet egy teljes számítógép is.", "correct": true},
       {"text": "A telepítési és komponens diagramok nem kombinálhatóak közös ábrába.", "correct": false}
     ]
-  }
-
-
+  },
+  {
+  "id": 77,
+  "statement": "Jelölje az igaz állításokat!",
+  "options": [
+    {"text": "Az UML-specifikáció részét képező OCL nyelv megszorítások definiálására alkalmas.", "correct": true},
+    {"text": "Az UML-specifikáció részét képező OCL nyelv pszeudo-kód és ábrarészletek definiálására alkalmas.", "correct": false},
+    {"text": "A <<boundary>> sztereotípia osztályokra alkalmazható.", "correct": true},
+    {"text": "A <<boundary>> sztereotípia képernyőrészletekre alkalmazható.", "correct": false},
+    {"text": "OO tervezésben egy CRC-kártya osztályokhoz felelősségeket határozhat meg.", "correct": true},
+    {"text": "OO tervezésben egy CRC-kártya fejlesztőkhöz felelősségeket határozhat meg.", "correct": false}
+  ]
+},
+{
+  "id": 78,
+  "statement": "Jelölje az igaz állításokat!",
+  "options": [
+    {"text": "Több objektum együttes működésének leírására az állapotgép alkalmas.", "correct": false},
+    {"text": "Függőség két osztály között akkor áll fenn, ha van közöttük közös aktor.", "correct": false},
+    {"text": "Függőség két osztály között akkor áll fenn, ha egyik specifikációjának megváltozása kihathat a másik osztály specifikációjára.", "correct": true},
+    {"text": "Az absztrakt osztály csak limitált számú példánnyal rendelkezhet.", "correct": false}
+  ]
+},
+{
+  "id": 79,
+  "statement": "Jelölje az igaz állításokat!",
+  "options": [
+    {"text": "Az absztrakt osztály nem példányosítható.", "correct": true},
+    {"text": "Az absztrakt osztály nem példányosítható, de örököltethető belőle másik osztály.", "correct": true},
+    {"text": "Az absztrakt osztály nem példányosítható és öröklésben is csak egy leszármazottja lehet.", "correct": false}
+  ]
+},
+{
+  "id": 80,
+  "statement": "Jelölje az igaz állításokat!",
+  "options": [
+    {"text": "Többszintű öröklődés esetén van olyan osztály, melynek őse és leszármazottja is van.", "correct": true},
+    {"text": "Többszörös öröklődés esetén van olyan osztály, melynek őse és leszármazottja is van.", "correct": false},
+    {"text": "Többszörös öröklődés esetén lehet olyan osztály, melynek több őse és több leszármazottja van.", "correct": true},
+    {"text": "Többszörös öröklődés esetén lehet olyan osztály, melynek több őse és egy leszármazottja van.", "correct": true}
+  ]
+},
+{
+  "id": 81,
+  "statement": "Jelölje az igaz állításokat!",
+  "options": [
+    {"text": "Egy adott objektum dinamikus működésének leírására az osztálydiagram szolgál.", "correct": false},
+    {"text": "Egy adott objektum dinamikus működésének leírására az objektumdiagram szolgál.", "correct": false},
+    {"text": "Egy adott objektum dinamikus működésének leírására az állapot-átmenet diagram szolgál.", "correct": true},
+    {"text": "Egy adott objektum dinamikus működésének leírására a tevékenységdiagram szolgál.", "correct": false}
+  ]
+},
+{
+  "id": 82,
+  "statement": "Alapvetően melyik UML diagramon lehetséges üzenetek feltüntetése?",
+  "options": [
+    {"text": "Use case diagram", "correct": false},
+    {"text": "Szekvencia diagram", "correct": true},
+    {"text": "Állapotgép", "correct": false},
+    {"text": "Osztálydiagram", "correct": false}
+  ]
+},
+{
+  "id": 83,
+  "statement": "Alapvetően melyik diagramon lehet események bekövetkezését jelölni?",
+  "options": [
+    {"text": "Use case diagram", "correct": false},
+    {"text": "Szekvencia diagram", "correct": false},
+    {"text": "Állapot-átmenet diagram", "correct": true},
+    {"text": "Osztálydiagram", "correct": false}
+  ]
+},
+{
+  "id": 84,
+  "statement": "Jelölje az osztálydiagramon osztályokra alkalmazható sztereotípiákat!",
+  "options": [
+    {"text": "<<implements>>", "correct": false},
+    {"text": "<<uses>>", "correct": false},
+    {"text": "<<entity>>", "correct": true},
+    {"text": "<<boundary>>", "correct": true}
+  ]
+},
+{
+  "id": 85,
+  "statement": "Jelölje az igaz állításokat!",
+  "options": [
+    {"text": "Refaktoring során elképzelhető, hogy új metódusok kerülnek egy osztályba.", "correct": true},
+    {"text": "Refaktoring során a funkcionalitás nem változik meg.", "correct": true}
+  ]
+},
+{
+  "id": 86,
+  "statement": "Mit jelent az emlékező állapot?",
+  "options": [
+    {"text": "Olyan állapot, amelyik emlékszik arra, hogy melyik állapotból származott a vezérjel, amikor odaért.", "correct": false},
+    {"text": "Olyan állapot, amelyik emlékszik arra, hogy melyik alállapotból terminált, és képes arra, hogy az állapotba való újabb belépéskor ugyanabba az állapotba kerüljön.", "correct": true},
+    {"text": "Olyan állapot, amelyik emlékszik arra, hogy a vezérjel hányszor volt már jelen ebben az állapotban, illetve igény esetén mérhető az állapotban töltött idő hossza is.", "correct": false}
+  ]
+},
+{
+  "id": 87,
+  "statement": "Mi a vezérlőautomata?",
+  "options": [
+    {"text": "A vezérlőautomata olyan telepítési diagram, mely műszaki eszközt, rendszert vezérel, vagy ír le.", "correct": false},
+    {"text": "A vezérlőautomata olyan osztálydiagram, mely műszaki eszközt, rendszert vezérel, vagy ír le.", "correct": false},
+    {"text": "A vezérlőautomata olyan állapotgép, mely műszaki eszközt, rendszert vezérel, vagy ír le.", "correct": true}
+  ]
+},
+{
+  "id": 88,
+  "statement": "Mi a dialóguslefutás?",
+  "options": [
+    {"text": "Olyan állapotautomata, mely a képernyő állapotait modellezi.", "correct": true},
+    {"text": "A vezérlőautomata olyan állapotgép, mely műszaki eszközt, rendszert vezérel, vagy ír le.", "correct": false}
+  ]
+}
 ]
