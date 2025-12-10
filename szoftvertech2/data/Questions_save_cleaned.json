@@ -1,0 +1,855 @@
+{
+    "questions_full": [
+        {
+            "id": 2,
+            "statement": "A Python-ban van konstruktor és destruktor függvény.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 4,
+            "statement": "A só-és-bors zaj tipikusan a csatornazaj.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 5,
+            "statement": "A Python interpreteres nyelv.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 6,
+            "statement": "A C++-ban nincs szükség szemétgyűjtőre.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 7,
+            "statement": "Az Arduino mikrovezérlőkártya tápellátása USB-n keresztül is biztosítható.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 9,
+            "statement": "A gradiens operátor megadja egy több dimenziós függvény első deriváltjainak összegét.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 10,
+            "statement": "A Gauss-szűrő azonos súlyokkal rendelkező átlagszűrő.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 11,
+            "statement": "A Harvard-architektúra lehetőséget ad az utasítások pipeline feldolgozására.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 12,
+            "statement": "A PIC mikrovezérlőknél a RAM és a regiszterkészlet különválik egymástól.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 13,
+            "statement": "A Python támogatja az objektumorientált programozást.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 15,
+            "statement": "A mikrovezérlők többnyire Neumann-architektúrájúak.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 16,
+            "statement": "Az FPGA-k csak egy adott specifikus feladatot képesek ellátni.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 17,
+            "statement": "A mediánszűrő lineáris szűrő.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 19,
+            "statement": "Az ASIC alapú beágyazott rendszerek energiahatékonyabbak mint az FPGA alapúak.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 21,
+            "statement": "A Python-ban van szemétgyűjtő.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 22,
+            "statement": "AZ FPGA-nál a programozás hardver szinten történik.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 24,
+            "statement": "A pixel-felhalmozás szegmentálási eljárás iteratív folyamat.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 25,
+            "statement": "Gauss-szűrőnél a σ (simítás mértékének) növelésével a maszk mérete csökken.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 26,
+            "statement": "Az intelligens érzékelő képes jelezni az elöregedését.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 27,
+            "statement": "A Prewitt-szűrő zajszűrésre szolgál.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 29,
+            "statement": "A Symbian valós idejű operációs rendszer.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 30,
+            "statement": "Laplace-operátor megadja egy több dimenziós függvény első deriváltjainak összegét.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 32,
+            "statement": "A bipoláris monolitikus IC-knél hagyományos ellenállásokat és kondenzátorokat alkalmaznak.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 33,
+            "statement": "A Flash memória egy nem felejtő típusú memória.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 34,
+            "statement": "A jelfeldolgozó processzorok (DSP) wattonkénti teljesítménye nagyobb a mikroprocesszorokénál.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 35,
+            "statement": "Izotróp élszűrőnél az eredmény függ az él orientációjától.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 36,
+            "statement": "A kvantálási hiba is zajként jelentkezik.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 40,
+            "statement": "A MOS tranzisztor kondenzátorként is használható.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 42,
+            "statement": "Az átlagszűrő nemlineáris simítószűrő.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 43,
+            "statement": "A Windows és a Linux nem valós idejű operációs rendszerek, de mindkettőhöz létezik valós idejű működést lehetővé tevő kiegészítés.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 45,
+            "statement": "Az élek az első derivált abszolút értékének maximumai.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 47,
+            "statement": "A watchdog egy időzítő áramkör, amely túlcsordulás esetén újraindítja a mikrovezérlőt.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 52,
+            "statement": "AZ FPGA programozható logikai eszköz.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 57,
+            "statement": "A valós idejű operációs rendszerek garantálják az alkalmazások valós idejű működését.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 62,
+            "statement": "A p-n dióda záróirányban előfeszítve kondenzátorként viselkedik.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 63,
+            "statement": "Az intelligens érzékelők a mikrovezérlőt is magukba integrálják.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 64,
+            "statement": "Python-ban a blokkokat kapcsos zárójelekkel kell jelezni.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 67,
+            "statement": "A PIC mikrovezérlőknél az utasításvégrehajtás frekvenciája negyede az alap órajel frekvenciájának.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 68,
+            "statement": "Az ASIC alapú beágyazott rendszerek gyártási egységára nagyobb mint az FPGA alapúaké.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 69,
+            "statement": "A beágyazott rendszerek hardver/szoftver partícionálása egy többkritériumos NP-nehéz optimalizálási feladat.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 83,
+            "statement": "A MOS technológiával készült monolitikus IC-knél hagyományos ellenállásokat és kondenzátorokat alkalmaznak.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 86,
+            "statement": "Beágyazott rendszereknél a hardver megtervezése után következik a szoftver tervezése.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 90,
+            "statement": "Az élek a második derivált maximumai.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 92,
+            "statement": "A Gauss-szűrőnél a súlyokat az egyenletes eloszlás adja.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 94,
+            "statement": "A Python a többszörös öröklődést nem támogatja.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 96,
+            "statement": "A Raspberry Pi 4 már a 4k-s megjelenítést is támogatja.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 98,
+            "statement": "A Python-ban a komplex számokhoz complex típus tartozik.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 100,
+            "statement": "Egy tipikus élszűrő az élerősséget és az élorientációt is megadja.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 107,
+            "statement": "A szoftver aktív redundanciája ugyanazon szoftver megkettőzését jelenti.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 108,
+            "statement": "A Sobel-szűrőt élszűrésre használjuk.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 109,
+            "statement": "A Neumann-architektúra lehetőséget ad az utasítások pipeline feldolgozására.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 111,
+            "statement": "A beágyazott rendszerek két komponensből, hardverből és szoftverből állnak.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 117,
+            "statement": "A mikrovezérlők általánosabb célúak mint a DSP-k.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 119,
+            "statement": "A Python statikus típusadású nyelv.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 122,
+            "statement": "A C++ statikus típusadású nyelv.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 126,
+            "statement": "Az intelligens érzékelő képes az önkalibrációra.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 135,
+            "statement": "Az ASIC olyan integrált áramkör, amely egy adott specifikus feladat ellátására lett tervezve.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 144,
+            "statement": "A PROM memória csak egyszer programozható.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 147,
+            "statement": "A Raspberry Pi mikroszámítógépeknek nincs BIOS-a.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 149,
+            "statement": "A gradiens operátor egy vektort eredményez.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 150,
+            "statement": "A bootloader a mikrovezérlő programmemóriájában helyezkedik el.",
+            "correct_answer": "Igaz"
+        },
+        {
+            "id": 152,
+            "statement": "A Raspberry Pi az SPI-kommunikációt támogatja, de az I2C-t nem.",
+            "correct_answer": "Hamis"
+        },
+        {
+            "id": 1001,
+            "statement": "Melyek jellemző alkalmazási területei a beágyazott rendszereknek?",
+            "options": [
+                {"text": "Autóipar", "correct": true},
+                {"text": "Űrkutatás", "correct": true},
+                {"text": "Sütőipar", "correct": false}
+            ]
+        },
+        {
+            "id": 1002,
+            "statement": "Mi igaz a MOS technológiájú monolitikus IC-kre?",
+            "options": [
+                {"text": "Induktivitás belső megvalósítása tipikusan nincs", "correct": true},
+                {"text": "Minden ellenállást huzalból készítenek", "correct": false},
+                {"text": "A kondenzátorok helyett is tranzisztorokat használnak", "correct": true}
+            ]
+        },
+        {
+            "id": 1003,
+            "statement": "Mi a GPIO port fő jellemzője egy beágyazott rendszeren?",
+            "options": [
+                {"text": "Általános célú be- és kimeneti port", "correct": true},
+                {"text": "Csak bemeneti jeleket tud fogadni", "correct": false},
+                {"text": "Csak SPI kommunikációra használható", "correct": false}
+            ]
+        },
+        {
+            "id": 1004,
+            "statement": "Mi a különbség a hardver és a szoftver partícionálás között beágyazott rendszerek tervezésénél?",
+            "options": [
+                {"text": "A hardver partícionálás a perifériák fizikai szétválasztását jelenti", "correct": false},
+                {"text": "A feladatokat a lehető leghatékonyabb módon kell elosztani a hardver és a szoftver között", "correct": true},
+                {"text": "A szoftver partícionálás mindig olcsóbb, mint a hardveres megoldás", "correct": false}
+            ]
+        },
+        {
+            "id": 1005,
+            "statement": "Melyek a valós idejű operációs rendszer (RTOS) legfontosabb komponensei?",
+            "options": [
+                {"text": "Ütemező (scheduler)", "correct": true},
+                {"text": "Valós idejű óra (real time clock)", "correct": true},
+                {"text": "Tartósító memória (storage)", "correct": false}
+            ]
+        },
+        {
+            "id": 1006,
+            "statement": "Melyek az egyenáramú motorok gerjesztési típusai?",
+            "options": [
+                {"text": "Soros gerjesztés", "correct": true},
+                {"text": "Párhuzamos gerjesztés", "correct": true},
+                {"text": "Önindukciós gerjesztés", "correct": false}
+            ]
+        },
+        {
+            "id": 1007,
+            "statement": "Milyen felépítést használnak jellemzően a kisebb teljesítményű mikrovezérlők?",
+            "options": [
+                {"text": "Harvard-architektúra", "correct": true},
+                {"text": "Neumann-architektúra", "correct": false},
+                {"text": "Többszörös busz-architektúra", "correct": false}
+            ]
+        },
+        {
+            "id": 1008,
+            "statement": "Mely szenzorok tartoznak az elmozdulás és pozíció mérő szenzorok közé?",
+            "options": [
+                {"text": "Ellenállásos szenzorok", "correct": true},
+                {"text": "Kapacitív szenzorok", "correct": true},
+                {"text": "Dióda szenzorok", "correct": false}
+            ]
+        },
+        {
+            "id": 1009,
+            "statement": "Mi igaz a PWM vezérlésű motorokra?",
+            "options": [
+                {"text": "Az impulzus szélességének változtatásával szabályozható a fordulatszám", "correct": true},
+                {"text": "Csak váltakozó áramú motoroknál alkalmazható", "correct": false},
+                {"text": "Javítja az indító nyomatékot", "correct": true}
+            ]
+        },
+        {
+            "id": 1010,
+            "statement": "A FET tranzisztorban milyen szerepe van a gate (kapu) elektródának?",
+            "options": [
+                {"text": "A csatorna vezetőképességét változtatja", "correct": true},
+                {"text": "Az áramkör földelését biztosítja", "correct": false},
+                {"text": "A kimeneti feszültséget közvetlenül szabályozza", "correct": false}
+            ]
+        },
+        {
+            "id": 1011,
+            "statement": "Mely szenzorok tartoznak a hőmérsékletmérő szenzorok közé?",
+            "options": [
+                {"text": "Expanziós hőmérők", "correct": true},
+                {"text": "Termoelemek", "correct": true},
+                {"text": "Indukciós szenzorok", "correct": false}
+            ]
+        },
+        {
+            "id": 1012,
+            "statement": "Milyen kommunikációs interfészeket találunk tipikusan beágyazott rendszerekben?",
+            "options": [
+                {"text": "SPI", "correct": true},
+                {"text": "I2C", "correct": true},
+                {"text": "HDMI", "correct": false}
+            ]
+        },
+        {
+            "id": 1013,
+            "statement": "Mi jellemzi az FPGA technológiát?",
+            "options": [
+                {"text": "Programozható logikai eszköz", "correct": true},
+                {"text": "Csak egyetlen feladatot képes ellátni", "correct": false},
+                {"text": "Utólag újrakonfigurálható", "correct": true}
+            ]
+        },
+        {
+            "id": 1014,
+            "statement": "Milyen memória típus a Flash?",
+            "options": [
+                {"text": "Nem felejtő memória", "correct": true},
+                {"text": "Felejtő memória", "correct": false},
+                {"text": "Csak RAM-ként használható", "correct": false}
+            ]
+        },
+        {
+            "id": 1015,
+            "statement": "A szilícium melyik fő csoportba tartozik?",
+            "options": [
+                {"text": "Elemi félvezető", "correct": true},
+                {"text": "Félvezető vegyület", "correct": false},
+                {"text": "Fém", "correct": false}
+            ]
+        },
+        {
+            "id": 1016,
+            "statement": "Mely állítás igaz a piezoelektromos szenzorokra?",
+            "options": [
+                {"text": "Egykristály szerkezetű anyagokból készülnek", "correct": true},
+                {"text": "Kizárólag elektromágneses elven működnek", "correct": false},
+                {"text": "Kvarcból is készülhetnek", "correct": true}
+            ]
+        },
+        {
+            "id": 1017,
+            "statement": "Mi az optoelektronikus szenzor fő jellemzője?",
+            "options": [
+                {"text": "Fényenergiát alakít át villamos mennyiséggé", "correct": true},
+                {"text": "Csak infravörös tartományban működik", "correct": false},
+                {"text": "Áramot alakít feszültséggé", "correct": false}
+            ]
+        },
+        {
+            "id": 1018,
+            "statement": "Melyik nem tartozik az analóg jelek tulajdonságai közé?",
+            "options": [
+                {"text": "Folytonosak időben", "correct": true},
+                {"text": "Diszkrét értékkészletűek", "correct": false},
+                {"text": "Diagramon ábrázolhatóak", "correct": true}
+            ]
+        },
+        {
+            "id": 1019,
+            "statement": "Mi a fő különbség az I2C és az SPI kommunikáció között?",
+            "options": [
+                {"text": "Az SPI négynél kevesebb vezetéket használ", "correct": false},
+                {"text": "Az I2C két vezetékes, az SPI négy", "correct": true},
+                {"text": "Az SPI lassabb, mint az I2C", "correct": false}
+            ]
+        },
+        {
+            "id": 1020,
+            "statement": "Milyen fő feladata van a DSP (Digital Signal Processor) egységnek?",
+            "options": [
+                {"text": "A digitalizált jelek feldolgozása", "correct": true},
+                {"text": "Az adatok grafikus megjelenítése", "correct": false},
+                {"text": "A jelfeldolgozás kizárólag hardveresen történik", "correct": false}
+            ]
+        },
+        {
+            "id": 1021,
+            "statement": "Miért előnyös a Harvard-architektúra a mikrovezérlőknél?",
+            "options": [
+                {"text": "Külön memória a programnak és az adatnak", "correct": true},
+                {"text": "Több processzormagot használ", "correct": false},
+                {"text": "Csak 32 bites rendszerekben alkalmazható", "correct": false}
+            ]
+        },
+        {
+            "id": 1022,
+            "statement": "A planár technológia lényege, hogy a félvezető rétegek ...",
+            "options": [
+                {"text": "rétegekben, síkbeli elrendezésben helyezkednek el", "correct": true},
+                {"text": "hengeres kialakításúak", "correct": false},
+                {"text": "minden elem külön tokban található", "correct": false}
+            ]
+        },
+        {
+            "id": 1023,
+            "statement": "A mikrovezérlő programmemóriájának mely típusai írhatók újra többször elektromosan?",
+            "options": [
+                {"text": "EEPROM", "correct": true},
+                {"text": "PROM", "correct": false},
+                {"text": "Flash", "correct": true}
+            ]
+        },
+        {
+            "id": 1024,
+            "statement": "Mi a PROM memória fő jellemzője?",
+            "options": [
+                {"text": "Csak egyszer programozható", "correct": true},
+                {"text": "Végtelenszer írható és törölhető", "correct": false},
+                {"text": "Elektromosan törölhető", "correct": false}
+            ]
+        },
+        {
+            "id": 1025,
+            "statement": "Melyik állítás igaz a szervomotorokra?",
+            "options": [
+                {"text": "Ismeri az aktuális pozícióját", "correct": true},
+                {"text": "Kizárólag váltakozó árammal működtethető", "correct": false},
+                {"text": "Feladatspecifikus pozícióba tud állni", "correct": true}
+            ]
+        },
+        {
+            "id": 1026,
+            "statement": "Az ultrahangos szenzor működési elve ...",
+            "options": [
+                {"text": "Nagyfrekvenciás hanghullámok visszaverődése", "correct": true},
+                {"text": "Fény visszaverődése", "correct": false},
+                {"text": "Indukciós hatás", "correct": false}
+            ]
+        },
+        {
+            "id": 1027,
+            "statement": "A következők közül melyek aktív szenzorok?",
+            "options": [
+                {"text": "Indukciós szenzorok", "correct": true},
+                {"text": "Ellenállásos szenzorok", "correct": false},
+                {"text": "Optoelektronikus szenzorok", "correct": true}
+            ]
+        },
+        {
+            "id": 1028,
+            "statement": "Melyek az ellenállásos hőmérők anyagai?",
+            "options": [
+                {"text": "Platina", "correct": true},
+                {"text": "Réz", "correct": true},
+                {"text": "Nikkel", "correct": true}
+            ]
+        },
+        {
+            "id": 1029,
+            "statement": "Mi jellemző a differenciáltranszformátor alapú szenzorra?",
+            "options": [
+                {"text": "Nagy megbízhatóság", "correct": true},
+                {"text": "Súrlódásmentes működés", "correct": true},
+                {"text": "Hőmérsékletet mér", "correct": false}
+            ]
+        },
+        {
+            "id": 1030,
+            "statement": "Mi igaz az N-típusú félvezetőre?",
+            "options": [
+                {"text": "Többségi töltéshordozók az elektronok", "correct": true},
+                {"text": "Többségi töltéshordozók a lyukak", "correct": false},
+                {"text": "Donor szennyezést tartalmaz", "correct": true}
+            ]
+        },
+        {
+            "id": 1031,
+            "statement": "Az FPGA milyen szinten programozható?",
+            "options": [
+                {"text": "Hardver szinten", "correct": true},
+                {"text": "Csak szoftver szinten", "correct": false},
+                {"text": "Magas szintű nyelven nem konfigurálható", "correct": false}
+            ]
+        },
+        {
+            "id": 1032,
+            "statement": "Melyek a beágyazott rendszerek főbb követelményei?",
+            "options": [
+                {"text": "Dedikált funkció", "correct": true},
+                {"text": "Valós idejű működés", "correct": true},
+                {"text": "Minél több univerzális port", "correct": false}
+            ]
+        },
+        {
+            "id": 1033,
+            "statement": "A bipoláris tranzisztor melyik tulajdonságára igaz?",
+            "options": [
+                {"text": "Két PN átmenettel rendelkezik", "correct": true},
+                {"text": "Csak egyfajta töltéshordozó vesz részt a működésben", "correct": false},
+                {"text": "Három elektródája van", "correct": true}
+            ]
+        },
+        {
+            "id": 1034,
+            "statement": "Az UART kommunikáció jellemzője:",
+            "options": [
+                {"text": "Aszinkron soros adatátvitel", "correct": true},
+                {"text": "Szinkron adatátvitel", "correct": false},
+                {"text": "Állítható átviteli sebesség", "correct": true}
+            ]
+        },
+        {
+            "id": 1035,
+            "statement": "A bootloader melyik memóriában helyezkedik el a mikrovezérlőben?",
+            "options": [
+                {"text": "Programmemóriában", "correct": true},
+                {"text": "RAM-ban", "correct": false},
+                {"text": "Regiszterekben", "correct": false}
+            ]
+        },
+        {
+            "id": 1036,
+            "statement": "Mi jellemző a monolitikus integrált áramkörökre?",
+            "options": [
+                {"text": "Minden elem egyetlen félvezető lemezkén van", "correct": true},
+                {"text": "Szigetelő alapon készül", "correct": false},
+                {"text": "Külső alkatrészek nélkül működnek", "correct": false}
+            ]
+        },
+        {
+            "id": 1037,
+            "statement": "Az alábbiak közül melyik tartozik a vastagréteg hibrid áramkörök hordozó anyagai közé?",
+            "options": [
+                {"text": "Al2O3 kerámia", "correct": true},
+                {"text": "Zafír", "correct": false},
+                {"text": "Üveg", "correct": false}
+            ]
+        },
+        {
+            "id": 1038,
+            "statement": "A szervo-pozíciószabályozás típusai közé tartozik:",
+            "options": [
+                {"text": "Point-to-point (PTP)", "correct": true},
+                {"text": "Continuous-path (CP)", "correct": true},
+                {"text": "Indukciós szabályozás", "correct": false}
+            ]
+        },
+        {
+            "id": 1039,
+            "statement": "Melyik állítás igaz a bimetálos hőmérőre?",
+            "options": [
+                {"text": "Hőmérsékletváltozásra hajlítás jellemzi", "correct": true},
+                {"text": "Optikai elven működik", "correct": false},
+                {"text": "Csak digitális kijelzős lehet", "correct": false}
+            ]
+        },
+        {
+            "id": 1040,
+            "statement": "Melyek a FET főbb előnyei a bipoláris tranzisztorokhoz képest?",
+            "options": [
+                {"text": "Nagy bemeneti ellenállás", "correct": true},
+                {"text": "Egyszerűbb gyártás", "correct": true},
+                {"text": "Csak nagyfeszültségen működik", "correct": false}
+            ]
+        },
+        {
+            "id": 1041,
+            "statement": "Az SPI kommunikáció jellemzője:",
+            "options": [
+                {"text": "Full-duplex adatátvitel", "correct": true},
+                {"text": "Csak simplex", "correct": false},
+                {"text": "Négy vezetéket használ", "correct": true}
+            ]
+        },
+        {
+            "id": 1042,
+            "statement": "Az ultrahangos szenzor fő alkalmazási területei:",
+            "options": [
+                {"text": "Távolságmérés", "correct": true},
+                {"text": "Hőmérsékletmérés", "correct": false},
+                {"text": "Közelség érzékelés", "correct": true}
+            ]
+        },
+        {
+            "id": 1043,
+            "statement": "A léptetőmotor vezérlésének módjai:",
+            "options": [
+                {"text": "Hullámhajtás", "correct": true},
+                {"text": "Egészlépéses üzemmód", "correct": true},
+                {"text": "Tranziens üzemmód", "correct": false}
+            ]
+        },
+        {
+            "id": 1044,
+            "statement": "Az optikai távolságmérő működési elve lehet:",
+            "options": [
+                {"text": "Háromszögelési módszer", "correct": true},
+                {"text": "Time-of-Flight (TOF)", "correct": true},
+                {"text": "Kizárólag infra-foton alapú", "correct": false}
+            ]
+        },
+        {
+            "id": 1045,
+            "statement": "A magnetométer szenzor ...",
+            "options": [
+                {"text": "A Föld mágneses terét méri", "correct": true},
+                {"text": "Gyorsulást mér", "correct": false},
+                {"text": "Tájolást határoz meg", "correct": true}
+            ]
+        },
+        {
+            "id": 1046,
+            "statement": "Az analóg-digitális átalakítók jellemzői:",
+            "options": [
+                {"text": "Mintavételi frekvencia", "correct": true},
+                {"text": "Felbontás", "correct": true},
+                {"text": "Csak bináris jeleket dolgoznak fel", "correct": false}
+            ]
+        },
+        {
+            "id": 1047,
+            "statement": "Az integrált áramkör fő alkotóeleme:",
+            "options": [
+                {"text": "Tranzisztor", "correct": true},
+                {"text": "LED", "correct": false},
+                {"text": "Transformátor", "correct": false}
+            ]
+        },
+        {
+            "id": 1048,
+            "statement": "A jelfeldolgozás során az illesztési függvényt melyik módszerrel lehet meghatározni?",
+            "options": [
+                {"text": "Legkisebb négyzetek módszere", "correct": true},
+                {"text": "Harmonikus analízis", "correct": false},
+                {"text": "Kvantálási elv", "correct": false}
+            ]
+        },
+        {
+            "id": 1049,
+            "statement": "A Neumann-architektúra fő jellemzője:",
+            "options": [
+                {"text": "Ugyanazt a memóriát használja a program és az adat számára", "correct": true},
+                {"text": "Külön memóriát használ a programnak", "correct": false},
+                {"text": "Csak digitális jeleket kezel", "correct": false}
+            ]
+        },
+        {
+            "id": 1050,
+            "statement": "Az EEPROM memória előnye:",
+            "options": [
+                {"text": "Elektronikusan írható és törölhető", "correct": true},
+                {"text": "Csak egyszer írható", "correct": false},
+                {"text": "Csak RAM-ban használható", "correct": false}
+            ]
+        },
+        {
+            "id": 1051,
+            "statement": "A DC motor fő részei:",
+            "options": [
+                {"text": "Állórész", "correct": true},
+                {"text": "Forgórész", "correct": true},
+                {"text": "Szenzor", "correct": false}
+            ]
+        },
+        {
+            "id": 1052,
+            "statement": "A MEMS technológia jellemzője:",
+            "options": [
+                {"text": "Mikroméretű elektromechanikai rendszerek", "correct": true},
+                {"text": "Csak félvezető anyagokkal működik", "correct": false},
+                {"text": "Kizárólag szoftveres eszköz", "correct": false}
+            ]
+        },
+        {
+            "id": 1053,
+            "statement": "A gyakorlatban milyen memóriát alkalmaznak leggyakrabban mikrovezérlőkben a program tárolására?",
+            "options": [
+                {"text": "Flash", "correct": true},
+                {"text": "RAM", "correct": false},
+                {"text": "PROM", "correct": false}
+            ]
+        },
+        {
+            "id": 1054,
+            "statement": "A giroszkóp szenzor mit mér?",
+            "options": [
+                {"text": "Szögsebességet", "correct": true},
+                {"text": "Gyorsulást", "correct": false},
+                {"text": "Hőmérsékletet", "correct": false}
+            ]
+        },
+        {
+            "id": 1055,
+            "statement": "Az ADC konverziós ideje mitől függ?",
+            "options": [
+                {"text": "A konverter felbontásától", "correct": true},
+                {"text": "A bemeneti jelszinttől", "correct": false},
+                {"text": "A mintavételi frekvenciától", "correct": true}
+            ]
+        
+        },
+        {
+            "id": 1056,
+            "statement": "A PIC mikrovezérlőknél a RAM melyik feladatot látja el?",
+            "options": [
+                {"text": "Változók tárolása", "correct": true},
+                {"text": "Regiszterek tárolása", "correct": true},
+                {"text": "Programkód tárolása", "correct": false}
+            ]
+        },
+        {
+            "id": 1057,
+            "statement": "Az aszinkron soros kommunikáció előnye:",
+            "options": [
+                {"text": "Egyszerűbb hardverigény", "correct": true},
+                {"text": "Állítható adatsebesség", "correct": true},
+                {"text": "Mindenképp szükséges szinkron órajel", "correct": false}
+            ]
+        },
+        {
+            "id": 1058,
+            "statement": "Az aktív redundancia a szoftvereknél ...",
+            "options": [
+                {"text": "Eltérő tervezésű redundáns modulokat alkalmaz", "correct": true},
+                {"text": "Azonos kódú másolatokat használ", "correct": false},
+                {"text": "Csak hardver szinten értelmezhető", "correct": false}
+            ]
+        },
+        {
+            "id": 1059,
+            "statement": "A mikrovezérlő típustól függően melyik jellemző különbség a PIC és az Atmel között?",
+            "options": [
+                {"text": "A PIC-ben a RAM és a regiszterkészlet azonos", "correct": true},
+                {"text": "Az Atmel általában nagyobb RAM-ot tartalmaz", "correct": true},
+                {"text": "A PIC kizárólag Harvard-architektúra", "correct": false}
+            ]
+        },
+        {
+            "id": 1060,
+            "statement": "A watchdog timer feladata:",
+            "options": [
+                {"text": "Újraindítja a mikrovezérlőt túlcsordulás esetén", "correct": true},
+                {"text": "A rendszer órajelét szabályozza", "correct": false},
+                {"text": "Csak a szoftveres hibákat kezeli", "correct": false}
+            ]
+        }
+    ]
+}

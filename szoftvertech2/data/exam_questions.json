@@ -1,0 +1,565 @@
+[
+  {
+    "id": 1,
+    "source": "mintavizsga_a",
+    "topic": "Tesztcél",
+    "questionText": "Az alábbi állítások közül melyik ír le érvényes tesztcélt?",
+    "type": "single",
+    "options": [
+      "Bizonyítani, hogy a tesztelt rendszerben nincsenek kijavítatlan hibák.",
+      "Bizonyítani, hogy a rendszer élesbe állítása után nem lesznek meghibásodások.",
+      "Csökkenteni a teszt tárgyának kockázati szintjét és megalapozni a minőségi szintbe vetett bizalmat.",
+      "Ellenőrizni, hogy nincsenek nem tesztelt bemeneti kombinációk."
+    ],
+    "correctAnswers": [2]
+  },
+  {
+    "id": 2,
+    "source": "mintavizsga_a",
+    "topic": "Teszttevékenység",
+    "questionText": "Az alábbi lehetőségek közül melyik jó példa olyan teszttevékenységre, amely hozzájárul a sikerhez?",
+    "type": "single",
+    "options": [
+      "A tesztelőket bevonjuk a különböző szoftverfejlesztési életciklus (SDLC) tevékenységekbe és ez segít a munkatermékek hibáinak észlelésében.",
+      "sdg",
+      "A tesztelők igyekeznek nem zavarni a fejlesztőket kódolás közben, hogy azok jobb kódot írjanak.",
+      "A tesztelők együttműködnek a végfelhasználókkal a hibajelentések minőségének javításában a komponens integrációs tesztelés a rendszertesztelés során.",
+      "A minősített tesztelők sokkal jobb teszteseteket terveznek, mint a nem minősített tesztelők."
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "id": 3,
+    "source": "mintavizsga_a",
+    "topic": "Tesztelési alapelvek",
+    "questionText": "Egy új rendszert inkrementálisan előállító csapathoz kerültél tesztelőként. Észrevetted, hogy a meglévő regressziós tesztesetekben több iteráció óta nem történt módosítás, és nem azonosítottak új regressziós hibákat. A menedzsered boldog, de te nem. Melyik tesztelési alapelv magyarázza szkepticizmusod?",
+    "type": "single",
+    "options": [
+      "A tesztek elkopnak.",
+      "A hibamentesség téveszméje.",
+      "Hibafürtök megjelenése.",
+      "Nem lehetséges kimerítő teszt."
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "id": 4,
+    "source": "mintavizsga_a",
+    "topic": "Tesztelemzés",
+    "questionText": "Egy ételrendeléshez mobilalkalmazást fejlesztő csapatban dolgozol. A jelenlegi iteráció során a csapat a fizetési funkció bevezetése mellett döntött. Az alábbi tevékenységek közül melyik része a tesztelemzésnek?",
+    "type": "single",
+    "options": [
+      "Becslés, miszerint a fizetési szolgáltatással való integráció tesztelése 8 embernapot vesz igénybe.",
+      "Döntés, miszerint a csapatnak tesztelnie kell a fizetés több felhasználó közötti helyes megosztását.",
+      "Tesztadatok meghatározása határérték-elemzés (BVA) használatával azokhoz a tesztesetekhez, amelyek a minimálisan megengedett fizethető összeg esetén ellenőrzik a fizetés helyes feldolgozását.",
+      "A hitelkártyás fizetés folyamatát ellenőrző teszteset során észlelt tényleges és elvárt eredmény közötti eltérés elemzése és a hiba jelentése."
+    ],
+    "correctAnswers": [2]
+  },
+  {
+    "id": 5,
+    "source": "mintavizsga_a",
+    "topic": "Tesztfolyamat",
+    "questionText": "Az alábbi tényezők közül melyik befolyásolja JELENTŐSEN a tesztfolyamatot?\ni. A szoftverfejlesztési életciklus (SDLC)\nii. A korábbi projektekben észlelt hibák száma\niii. Az azonosított termékkockázatok\niv. Új, formális fehérdoboz tesztelést kötelezővé tevő szabályozási követelmények\nv. A tesztkörnyezet beállítása",
+    "type": "single",
+    "options": [
+      "i, ii jelentősen befolyásolja",
+      "i, iii, iv jelentősen befolyásolja",
+      "ii, iv, v jelentősen befolyásolja",
+      "iii, v jelentősen befolyásolja"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "id": 6,
+    "source": "mintavizsga_a",
+    "topic": "Tesztelés szerepkör",
+    "questionText": "Az alábbi feladatok közül melyik tartozik LEGINKÁBB a tesztelés szerepkörhöz?",
+    "type": "multiple",
+    "options": [
+      "A tesztkörnyezetek konfigurálása.",
+      "A teendőslista (backlog) naprakészen tartása.",
+      "Megoldások tervezése az új követelményekhez.",
+      "A tesztterv elkészítése.",
+      "A tesztbázis elemzése."
+    ],
+    "correctAnswers": [0, 4]
+  },
+  {
+  "id": 7,
+  "source": "mintavizsga_a",
+  "topic": "Agilis tesztelés",
+  "questionText": "Hogyan illeszkednek a fenti tesztkategóriák az agilis tesztelési kvadránsokhoz?\n1. Használhatósági tesztelés\n2. Komponenstesztelés\n3. Funkcionális tesztelés\n4. Megbízhatósági tesztelés\nA. Agilis tesztelési kvadráns Q1: technológia szemléletű, a fejlesztőcsapat támogatása\nB. Agilis tesztelési kvadráns Q2: üzleti szemléletű, a fejlesztőcsapat támogatása\nC. Agilis tesztelési kvadráns Q3: üzlet szemléletű, a termék kritikája\nD. Agilis tesztelési kvadráns Q4: technológia szemléletű, a termék kritikája",
+  "type": "single",
+  "options": [
+    "1C, 2A, 3B, 4D",
+    "1D, 2A, 3C, 4B",
+    "1C, 2B, 3D, 4A",
+    "1D, 2B, 3C, 4A"
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 8,
+  "source": "mintavizsga_a",
+  "topic": "Kockázatkezelés",
+  "questionText": "A kockázatelemzés során a következő kockázatot azonosították és értékelték:\nKockázat: A jelentéslétrehozás válaszideje túl hosszú.\nKockázat valószínűsége: közepes; kockázat hatása: magas.\nVálasz a kockázatra:\n- egy független tesztelő csoport a rendszertesztelés során teljesítménytesztelést végez,\n- a végfelhasználók egy kiválasztott mintája alfa- és béta-elfogadási tesztelést végez a kiadás előtt.\nMilyen intézkedést javasolnak válaszul erre az elemzett kockázatra?",
+  "type": "single",
+  "options": [
+    "Kockázatelfogadás",
+    "Vészhelyzeti terv",
+    "Kockázatmérséklés",
+    "Kockázatátruházás"
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 9,
+  "source": "mintavizsga_a",
+  "topic": "Agilis munkatermékek",
+  "questionText": "Melyik munkaterméket használhatja egy agilis csapat, hogy megmutassa az elvégzett munka mennyiségét és a teljes hátralévő munka mennyiségét egy adott iterációban?",
+  "type": "single",
+  "options": [
+    "Elfogadási kritériumok",
+    "Hibajelentés",
+    "Összefoglaló tesztjelentés",
+    "Kivitelezési görbe"
+  ],
+  "correctAnswers": [3]
+},
+{
+  "id": 10,
+  "source": "mintavizsga_a",
+  "topic": "ATDD",
+  "questionText": "Az alábbi állítások közül melyik jellemzi a LEGJOBBAN az elfogadásiteszt-vezérelt fejlesztés (ATDD) megközelítését?",
+  "type": "single",
+  "options": [
+    "Az ATDD-ben az elfogadási kritériumokat jellemzően az amennyiben (given)/ha (when)/akkor (then) formátum alapján hozzák létre.",
+    "Az ATDD-ben a teszteseteket főként a komponenstesztelés során hozzák létre, és azok kódorientáltak.",
+    "Az ATDD-ben a tesztek az elfogadási feltételek alapján jönnek létre, hogy irányt adjanak a kapcsolódó szoftver fejlesztésének.",
+    "Az ATDD-ben a tesztek a szoftver kívánt viselkedésén alapulnak, ami megkönnyíti a csapattagok számára azok megértését."
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 11,
+  "source": "mintavizsga_a",
+  "topic": "Shift-left",
+  "questionText": "Az alábbiak közül melyik NEM példa a shift-left megközelítésre?",
+  "type": "single",
+  "options": [
+    "A felhasználói követelmények felülvizsgálata, mielőtt az érdekelt felek hivatalosan elfogadják azokat.",
+    "Komponens teszt írása a vonatkozó kód megírása előtt.",
+    "Egy komponens teljesítményhatékonysági tesztjének végrehajtása a komponens tesztelése során.",
+    "Tesztszkript írása a konfigurációmenedzsment folyamat beállítása előtt."
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 12,
+  "source": "mintavizsga_a",
+  "topic": "Visszatekintő megbeszélés",
+  "questionText": "Az alábbi érvek közül melyikkel győznéd meg a vezetődet, hogy minden kiadási ciklus végén szervezzen visszatekintő megbeszélést?",
+  "type": "single",
+  "options": [
+    "A visszatekintő megbeszélések manapság nagyon népszerűek, és az ügyfelek nagyra értékelnék, ha a folyamatainkba beépítenénk őket.",
+    "A visszatekintő megbeszélések szervezése pénzt takarít meg a szervezetnek, mivel enélkül a végfelhasználók képviselői nem adnak azonnali visszajelzést a termékről.",
+    "A visszatekintő megbeszélés során azonosított folyamatbeli gyengeségek elemezhetők, és a szervezet folyamatos folyamatfejlesztési programjának tennivalólistájaként szolgálhatnak.",
+    "A visszatekintő megbeszélések öt értéket hangsúlyoznak, köztük a bátorságot és a tiszteletet, amelyek elengedhetetlenek a szervezet folyamatos fejlődésének fenntartásához."
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 13,
+  "source": "mintavizsga_a",
+  "topic": "Tesztszintek",
+  "questionText": "Az alábbi (A-D) tesztszinteken JELLEMZŐEN a meghibásodások mely típusai (1-4) történhetnek?\n1. Meghibásodások a rendszer viselkedésében, mivel az eltér a felhasználó üzleti igényeitől\n2. Meghibásodások a komponensek közötti kommunikációban\n3. Meghibásodások a modul logikájában\n4. Meghibásodások a nem megfelelően megvalósított üzleti szabályok miatt\nA. Komponenstesztelés\nB. Komponens integrációs tesztelés\nC. Rendszertesztelés\nD. Elfogadási tesztelés",
+  "type": "single",
+  "options": [
+    "1D, 2B, 3A, 4C",
+    "1D, 2B, 3C, 4A",
+    "1B, 2A, 3D, 4C",
+    "1C, 2B, 3A, 4D"
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 14,
+  "source": "mintavizsga_a",
+  "topic": "Regressziós tesztelés",
+  "questionText": "Egy felhasználói történetet tesztelsz három elfogadási kritériummal: EK1, EK2 és EK3. Az EK1-re a TE1 teszteset, az EK2-re a TE2, az EK3-ra pedig a TE3 teszteset vonatkozik. A jelenlegi tesztvégrehajtás előzménye három tesztfuttatás volt a szoftver három egymást követő verzióján az alábbiak szerint:\nA tesztek megismétlésére akkor kerül sor, amikora tesztfuttatás során talált összes hibát kijavították, és a szoftver új verziója elérhetővé vált. A fenti tesztek közül melyeket hajtják végre regressziós tesztként?",
+  "type": "single",
+  "options": [
+    "Csak ezeket: 4, 7, 8, 9",
+    "Csak ezeket: 5, 7",
+    "Csak ezeket: 4, 6, 8, 9",
+    "Csak ezeket: 5, 6"
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 15,
+  "source": "mintavizsga_a",
+  "topic": "Statikus tesztelés",
+  "questionText": "Az alábbiak közül melyik NEM a statikus tesztelés előnye?",
+  "type": "single",
+  "options": [
+    "Kevésbé költséges hibamenedzsment, mivel a hibákat a szoftverfejlesztési életciklus későbbi szakaszában könnyebben lehet felfedezni.",
+    "A statikus tesztelés során talált hibák javítása általában sokkal olcsóbb, mint a dinamikus tesztelés során talált hibák javítása.",
+    "Olyan kódolási hibák megtalálása, amelyeket a dinamikus teszteléssel nem feltétlenül lehetett volna megtalálni.",
+    "A követelményekben lévő hiányosságok és következetlenségek felderítése."
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 16,
+  "source": "mintavizsga_a",
+  "topic": "Visszacsatolás",
+  "questionText": "Az alábbiak közül melyik a korai és gyakori visszajelzés előnye?",
+  "type": "single",
+  "options": [
+    "Fejleszti a jövőbeli projektek tesztfolyamatát.",
+    "Arra kényszeríti az ügyfeleket, hogy a megállapított kockázatok alapján rangsorolják követelményeiket.",
+    "A változások minőségének mérésére szolgál.",
+    "Segít elkerülni a követelményekkel kapcsolatos félreértéseket."
+  ],
+  "correctAnswers": [3]
+},
+{
+  "id": 17,
+  "source": "mintavizsga_a",
+  "topic": "Felülvizsgálat",
+  "questionText": "A szervezetben használt felülvizsgálatok a következő jellemzőkkel rendelkeznek:\n- Van írnok szerepkör\n- A fő cél a minőség kiértékelése\n- A megbeszélést a munkatermék szerzője vezeti\n- Van egyéni felkészülés\n- Felülvizsgálati jelentés készül\nAz alábbi felülvizsgálati típusok közül melyiket használják a LEGNAGYOBB valószínűséggel?",
+  "type": "single",
+  "options": [
+    "Informális felülvizsgálat",
+    "Átvizsgálás",
+    "Technikai felülvizsgálat",
+    "Inspekció"
+  ],
+  "correctAnswers": [3]
+},
+{
+  "id": 18,
+  "source": "mintavizsga_a",
+  "topic": "Felülvizsgálat sikertényezői",
+  "questionText": "Az alábbi állítások közül melyik tényező NEM járul hozzá a sikeres felülvizsgálatokhoz?",
+  "type": "single",
+  "options": [
+    "A résztvevőknek megfelelő időt kell szánniuk a felülvizsgálatra.",
+    "A nagy munkatermékek kisebb részekre bontása, hogy a szükséges erőfeszítést kevésbé terhelővé tegye.",
+    "A résztvevőknek kerülniük kell az olyan viselkedést, amely unalomra, elkeseredettségre vagy ellenségeskedésre utalhat a többi résztvevő felé.",
+    "A feltárt meghibásodásokat el kell ismerni, meg kell becsülni és objektíven kell kezelni."
+  ],
+  "correctAnswers": [1]
+},
+{
+  "id": 19,
+  "source": "mintavizsga_a",
+  "topic": "Tapasztalatalapú tesztelés",
+  "questionText": "Az alábbiak közül melyik jellemzi a tapasztalatalapú teszttechnikákat?",
+  "type": "single",
+  "options": [
+    "A tesztesetek részletes tervezési információk alapján készülnek.",
+    "Az interfész kódrészen belül tesztelt elemek a lefedettség mérésére szolgálnak.",
+    "A technikák nagymértékben támaszkodnak a tesztelők ismereteire a szoftverrel és az üzleti doménnel kapcsolatban.",
+    "A teszteseteket a követelményektől való eltérések azonosítására használják."
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 20,
+  "source": "mintavizsga_a",
+  "topic": "Ekvivalencia partícionálás",
+  "questionText": "Egy egyszerűsített lakáskereső űrlapot tesztelsz, amely csak két keresési kritériummal rendelkezik:\n- emelet (három lehetséges opcióval: földszint; első emelet; második vagy magasabb emelet),\n- kert típusa (három lehetséges opcióval: nincs kert; kis kert; nagy kert).\nMennyi teszteset szükséges LEGALÁBB a 100%-os EP-lefedettség eléréséhez?",
+  "type": "single",
+  "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "correctAnswers": [1]
+},
+{
+  "id": 21,
+  "source": "mintavizsga_a",
+  "topic": "Határérték-elemzés",
+  "questionText": "Egy olyan rendszert tesztelsz, amely kiszámítja egy adott diák végső jegyét egy kurzuson. A végső jegyet a végeredmény alapján osztja ki a rendszer a következő szabályok szerint:\n- 0 - 50 pont: nem felelt meg\n- 51-60 pont: megfelelt\n- 61-70 pont: elégséges\n- 71-80 pont: jó\n- 81-90 pont: nagyon jó\n- 91-100 pont: kiváló\nAz alábbi teszteseteket készítetted el:\nMekkora lefedettséget érnek el a létező tesztesetek 2 értékű határérték-elemzést (BVA) végezve a végső eredményre?",
+  "type": "single",
+  "options": [
+    "50%",
+    "60%",
+    "33.3%",
+    "100%"
+  ],
+  "correctAnswers": [3]
+},
+{
+  "id": 22,
+  "source": "mintavizsga_a",
+  "topic": "Döntési táblázat",
+  "questionText": "Kedvenc napi kerékpárkölcsönződ új ügyfélkapcsolat-kezelő rendszert vezetett be. KIZÁRÓLAG az ügyfélkapcsolat-kezelő rendszer funkcióleírása alapján a fenti szabályok közül melyik ír le lehetetlen helyzetet?",
+  "type": "single",
+  "options": [
+    "Sz4",
+    "Sz2",
+    "Sz6",
+    "Sz8"
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 23,
+  "source": "mintavizsga_a",
+  "topic": "Állapotátmenet",
+  "questionText": "Egy olyan rendszert tesztelsz, amelynek életciklusát az alábbi állapotátmenet-diagram modellezi. A rendszer az INIT állapotban indul, és a működése az OFF állapotban fejeződik be. Minimum mennyi teszteset szükséges érvényes átmenet lefedettség eléréséhez?",
+  "type": "single",
+  "options": [
+    "4",
+    "2",
+    "7",
+    "3"
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 24,
+  "source": "mintavizsga_a",
+  "topic": "Utasításlefedettség",
+  "questionText": "A tesztkészleted 100%-os utasításlefedettséget ért el. Mi a következménye ennek a ténynek?",
+  "type": "single",
+  "options": [
+    "A kódban minden, hibát tartalmazó utasítás legalább egyszer végrehajtásra került.",
+    "Bármely tesztcsomag, amely több tesztesetet tartalmaz, mint a te tesztcsomagod, szintén 100%-os utasításlefedettséget fog elérni.",
+    "A kód minden egyes útvonala legalább egyszer végrehajtásra került.",
+    "A bemeneti értékek minden kombinációja legalább egyszer tesztelésre került."
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 25,
+  "source": "mintavizsga_a",
+  "topic": "Fehérdoboz tesztelés",
+  "questionText": "Az alábbiak közül melyik NEM igaz a fehérdoboz tesztelésre?",
+  "type": "single",
+  "options": [
+    "A fehérdoboz tesztelés során a szoftver teljes implementációját figyelembe veszik.",
+    "A lefedettségi metrikák segíthetnek további tesztek azonosításában a kódlefedettség növelése érdekében.",
+    "A fehérdoboz-teszttechnikák a statikus tesztelésben is alkalmazhatók.",
+    "A fehérdoboz tesztelés azonosítani tudja a követelmények megvalósításának hiányosságait."
+  ],
+  "correctAnswers": [3]
+},
+{
+  "id": 26,
+  "source": "mintavizsga_a",
+  "topic": "Hibasejtés",
+  "questionText": "Az alábbiak közül melyik írja le a LEGJOBBAN a hibasejtés koncepcióját?",
+  "type": "single",
+  "options": [
+    "A hibasejtés magában foglalja a múltban talált hibákról és a fejlesztők által elkövetett tipikus hibákról szerzett tudásod és tapasztalatod felhasználását.",
+    "A hibasejtés magában foglalja a fejlesztéssel kapcsolatos személyes tapasztalataidnak és a fejlesztőként elkövetett hibáidnak a felhasználását.",
+    "A hibasejtés során azt kell elképzelned, hogy a teszt tárgyának felhasználója vagy, és meg kell találnod azokat a hibákat, amelyeket a felhasználó a teszt tárgyával való interakció során elkövethet.",
+    "A hibasejtés során gyorsan le kell másolnod a fejlesztési feladatot, hogy azonosítsd a fejlesztő által elkövethető hibákat."
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 27,
+  "source": "mintavizsga_a",
+  "topic": "Teszttechnika választás",
+  "questionText": "A projektedben késett egy vadonatúj alkalmazás kiadása, ezért a tesztek végrehajtása későn kezdődött, ugyanakkor nagyon részletes szakterületi ismeretekkel és jó elemzői készségekkel rendelkezel. A követelmények teljes listáját még nem osztották meg a csapattal, de a vezetőség már kéri néhány teszteredmény bemutatását. Melyik tesztelési technika illik LEGJOBBAN ehhez a helyzethez?",
+  "type": "single",
+  "options": [
+    "Ellenőrzőlista alapú felülvizsgálat",
+    "Hibasejtés",
+    "Felderítő tesztelés",
+    "Elágazási tesztelés"
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 28,
+  "source": "mintavizsga_a",
+  "topic": "Elfogadási feltételek",
+  "questionText": "Az alábbiak közül melyik írja le LEGJOBBAN az elfogadási feltételek dokumentálásának módját?",
+  "type": "single",
+  "options": [
+    "Visszatekintő megbeszélések lefolytatása az érdekelt felek valódi igényeinek meghatározására egy adott felhasználói történettel kapcsolatban.",
+    "Az amennyiben (given)/ha (when)/akkor (then) formátum használata egy adott felhasználói történethez kapcsolódó példa tesztfeltétel leírására.",
+    "Szóbeli kommunikáció, hogy csökkentsük annak kockázatát, hogy mások valamit félreértsenek.",
+    "Egy adott felhasználói történethez kapcsolódó kockázatok dokumentálása a teszttervben, hogy megkönnyítse az adott felhasználói történet kockázatalapú tesztelését."
+  ],
+  "correctAnswers": [1]
+},
+{
+  "id": 29,
+  "source": "mintavizsga_a",
+  "topic": "ATDD példa",
+  "questionText": "Tekintsd meg az alábbi felhasználói történetet:\nSzerkesztőként szeretném átnézni a tartalmat a közzététel előtt így biztosíthatom, hogy a nyelvtan helyes legyen.\nAz alábbiak közül melyik az elfogadásiteszt-vezérelt fejlesztés (ATDD) teszt LEGJOBB példája ennél a felhasználói történetnél?",
+  "type": "single",
+  "options": [
+    "Annak tesztelése, hogy a szerkesztő el tudja-e menteni a dokumentumot az oldal tartalmának módosítása után.",
+    "Annak tesztelése, hogy a tartalom tulajdonosa be tud-e jelentkezni és frissíteni tudja-e a tartalmat.",
+    "Annak tesztelése, hogy a szerkesztő be tudja-e ütemezni a szerkesztett tartalom közzétételét.",
+    "Annak tesztelése, hogy a szerkesztő ki tud-e választani egy másik szerkesztőt a frissítéshez."
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 30,
+  "source": "mintavizsga_a",
+  "topic": "Iteráció tervezés",
+  "questionText": "Hogyan adnak értéket a tesztelők az iteráció és a kiadás tervezéséhez?",
+  "type": "single",
+  "options": [
+    "A tesztelők határozzák meg a fejlesztendő felhasználói történetek prioritását.",
+    "A tesztelők csak a tesztelendő rendszer funkcionális szempontjaira összpontosítanak.",
+    "A tesztelők részt vesznek a felhasználói történetek részletes kockázatazonosításában és kockázatértékelésében.",
+    "A tesztelők a kiadás tervezése során a korai teszttervezéssel garantálják a kiváló minőségű szoftverek kiadását."
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 31,
+  "source": "mintavizsga_a",
+  "topic": "Kilépési kritérium",
+  "questionText": "Az alábbi lehetőségek közül melyik a rendszer tesztelésének kilépési kritériuma?",
+  "type": "multiple",
+  "options": [
+    "A tesztkörnyezet készenléte.",
+    "A tesztelő képes bejelentkezni a tesztelési objektumba.",
+    "A becsült hibasűrűség elérése.",
+    "A követelmények lefordítása amennyiben (given)/ha (when)/akkor (then) formátumra.",
+    "A regressziós teszteket automatizálták."
+  ],
+  "correctAnswers": [0, 2]
+},
+{
+  "id": 32,
+  "source": "mintavizsga_a",
+  "topic": "Hárompontos becslés",
+  "questionText": "Csapatod a hárompontos becslési technikát használja egy új, nagy kockázatú funkció tesztelési ráfordításainak becslésére. A következő becslések születtek:\n- legoptimistább becslés: 2 ember-óra\n- legvalószínűbb becslés: 11 ember-óra\n- legpesszimistább becslés: 14 ember-óra\nMi a végső becslés?",
+  "type": "single",
+  "options": [
+    "9 ember-óra",
+    "14 ember-óra",
+    "11 ember-óra",
+    "10 ember-óra"
+  ],
+  "correctAnswers": [3]
+},
+{
+  "id": 33,
+  "source": "mintavizsga_a",
+  "topic": "Tesztprioritás",
+  "questionText": "Egy olyan mobilalkalmazást tesztelsz, amely segítségével a felhasználók a kívánt étel típusa alapján találhatnak a közelben éttermet. Az alábbi tesztesetek közül melyiket kell harmadikként végrehajtani?",
+  "type": "single",
+  "options": [
+    "TC 003",
+    "TC 005",
+    "TC 002",
+    "TC 001"
+  ],
+  "correctAnswers": [1]
+},
+{
+  "id": 34,
+  "source": "mintavizsga_a",
+  "topic": "Agilis tesztelési kvadráns",
+  "questionText": "Tekintsd meg a következő tesztkategóriákat (1-4) és agilis tesztelési kvadránsokat (A-D):\n1. Használhatósági tesztelés\n2. Komponenstesztelés\n3. Funkcionális tesztelés\n4. Megbízhatósági tesztelés\nA. Agilis tesztelési kvadráns Q1: technológia szemléletű, a fejlesztőcsapat támogatása\nB. Agilis tesztelési kvadráns Q2: üzleti szemléletű, a fejlesztőcsapat támogatása\nC. Agilis tesztelési kvadráns Q3: üzlet szemléletű, a termék kritikája\nD. Agilis tesztelési kvadráns Q4: technológia szemléletű, a termék kritikája\nHogyan illeszkednek a fenti tesztkategóriák az agilis tesztelési kvadránsokhoz?",
+  "type": "single",
+  "options": [
+    "1C, 2A, 3B, 4D",
+    "1D, 2A, 3C, 4B",
+    "1C, 2B, 3D, 4A",
+    "1D, 2B, 3C, 4A"
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 35,
+  "source": "mintavizsga_a",
+  "topic": "Kockázatkezelés",
+  "questionText": "A kockázatelemzés során a következő kockázatot azonosították és értékelték:\n- Kockázat: A jelentéslétrehozás válaszideje túl hosszú.\n- Kockázat valószínűsége: közepes; kockázat hatása: magas.\n- Válasz a kockázatra:\n  - egy független tesztelő csoport a rendszertesztelés során teljesítménytesztelést végez,\n  - a végfelhasználók egy kiválasztott mintája alfa- és béta-elfogadási tesztelést végez a kiadás előtt.\nMilyen intézkedést javasolnak válaszul erre az elemzett kockázatra?",
+  "type": "single",
+  "options": [
+    "Kockázatelfogadás",
+    "Vészhelyzeti terv",
+    "Kockázatmérséklés",
+    "Kockázatátruházás"
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 36,
+  "source": "mintavizsga_a",
+  "topic": "Agilis munkatermékek",
+  "questionText": "Melyik munkaterméket használhatja egy agilis csapat, hogy megmutassa az elvégzett munka mennyiségét és a teljes hátralévő munka mennyiségét egy adott iterációban?",
+  "type": "single",
+  "options": [
+    "Elfogadási kritériumok",
+    "Hibajelentés",
+    "Összefoglaló tesztjelentés",
+    "Kivitelezési görbe"
+  ],
+  "correctAnswers": [3]
+},
+{
+  "id": 37,
+  "source": "mintavizsga_a",
+  "topic": "Konfigurációkezelés",
+  "questionText": "Frissítened kell az egyik automatizált tesztszkriptet, hogy megfeleljen egy új követelménynek. Melyik folyamat jelzi, ha létrehozod a tesztszkript egy új verzióját a tesztadattárban?",
+  "type": "single",
+  "options": [
+    "Nyomonkövethetőségi irányítás",
+    "Karbantartási tesztelés",
+    "Konfigurációkezelés",
+    "Követelménytervezés"
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 38,
+  "source": "mintavizsga_a",
+  "topic": "Hibajelentés",
+  "questionText": "Az alábbi hibajelentést kaptad a fejlesztőktől, amely szerint a tesztjelentésben leírt rendellenesség nem reprodukálható. Milyen kritikus információk hiányoznak ebből a tesztjelentésből, amelyek hasznosak lettek volna a fejlesztők számára?",
+  "type": "single",
+  "options": [
+    "Elvárt és tényleges eredmény",
+    "Referenciák és hibaállapot",
+    "Tesztkörnyezet és tesztelem",
+    "Prioritás és súlyosság"
+  ],
+  "correctAnswers": [0]
+},
+{
+  "id": 39,
+  "source": "mintavizsga_a",
+  "topic": "Tesztelési eszközök",
+  "questionText": "Milyen tesztelési tevékenységet támogat egy adatelőkészítő eszköz?",
+  "type": "single",
+  "options": [
+    "Tesztfelügyelet és -irányítás",
+    "Tesztelemzés és -tervezés",
+    "Tesztmegvalósítás és -végrehajtás",
+    "Tesztlezárás"
+  ],
+  "correctAnswers": [2]
+},
+{
+  "id": 40,
+  "source": "mintavizsga_a",
+  "topic": "Automatizálás kockázata",
+  "questionText": "Melyik elem azonosítja helyesen a teszt automatizálás végrehajtásának lehetséges kockázatát?",
+  "type": "single",
+  "options": [
+    "Ismeretlen regressziókat vezethet be a produktív környezetben.",
+    "Lehet, hogy a tesztver karbantartására nem fordítanak elegendő erőfeszítést.",
+    "A tesztelési eszközökre és a kapcsolódó tesztverre nem lehet kellőképpen támaszkodni.",
+    "Csökkentheti a manuális tesztelésre szánt időt."
+  ],
+  "correctAnswers": [1]
+}
+]
