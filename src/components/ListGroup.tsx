@@ -57,7 +57,7 @@ function ListGroup({
           if (isQuizSubmitted && correctOptions) {
             textColor = correctOptions[index] ? "text-success" : "text-danger";
           }
-          
+
           return (
             <li
               className={
@@ -85,7 +85,10 @@ function ListGroup({
                   />
                 </div>
               )}
-              <div className={textColor} style={{ fontWeight: isQuizSubmitted ? "bold" : "normal" }}>
+              <div
+                className={textColor}
+                style={{ fontWeight: isQuizSubmitted ? "bold" : "normal" }}
+              >
                 {item}
               </div>
             </li>
