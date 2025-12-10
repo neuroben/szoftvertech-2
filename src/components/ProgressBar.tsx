@@ -4,6 +4,7 @@ interface Props {
   answer: (boolean | null)[];
   classN?: string;
   onProgressClick?: (index: number) => void;
+  isQuizSubmitted?: boolean; // Új prop: kvíz leadva-e
 }
 
 function ProgressBar({
@@ -12,44 +13,49 @@ function ProgressBar({
   answer,
   classN = "",
   onProgressClick,
+  isQuizSubmitted = false,
 }: Props) {
   const width = 100 / statementNumber;
-  
+
   return (
-    <div className={`progress ${classN}`} style={{ height: '30px' }}>
+    <div className={`progress ${classN}`} style={{ height: "30px" }}>
       {Array.from({ length: statementNumber }).map((_, idx) => {
         const isAnswered = answer[idx] !== null && answer[idx] !== undefined;
+        const isCorrect = answer[idx] === true;
         const isCurrent = idx === progress;
         const isClickable = true; // Minden kérdés kattintható
-        
-        let barClass = 'progress-bar d-flex align-items-center justify-content-center';
-        
+
+        let barClass =
+          "progress-bar d-flex align-items-center justify-content-center";
+
         if (isCurrent) {
-          barClass += ' bg-primary'; // Jelenlegi kérdés - kék
+          barClass += " bg-primary"; // Jelenlegi kérdés - kék
+        } else if (isAnswered && isQuizSubmitted) {
+          barClass += isCorrect ? " bg-success" : " bg-danger"; // Helyes - zöld, Helytelen - piros (csak leadás után)
         } else if (isAnswered) {
-          barClass += ' bg-info'; // Megválaszolt - sárga
+          barClass += " bg-info"; // Megválaszolt (de még nem leadva) - sárga
         } else {
-          barClass += ' bg-secondary'; // Még nem válaszolt - szürke
+          barClass += " bg-secondary"; // Még nem válaszolt - szürke
         }
-        
+
         if (isClickable) {
-          barClass += ' progress-bar-clickable';
+          barClass += " progress-bar-clickable";
         }
-        
+
         return (
           <div
             key={idx}
             className={barClass}
             role="progressbar"
-            style={{ 
+            style={{
               width: `${width}%`,
-              cursor: isClickable ? 'pointer' : 'default',
-              transition: 'all 0.2s ease',
+              cursor: isClickable ? "pointer" : "default",
+              transition: "all 0.2s ease",
               opacity: isCurrent ? 1 : 0.8,
-              fontSize: '12px',
-              fontWeight: 'bold',
-              color: 'white',
-              textShadow: '1px 1px 1px rgba(0,0,0,0.5)'
+              fontSize: "12px",
+              fontWeight: "bold",
+              color: "white",
+              textShadow: "1px 1px 1px rgba(0,0,0,0.5)",
             }}
             aria-valuenow={width}
             aria-valuemin={0}
@@ -57,17 +63,25 @@ function ProgressBar({
             onClick={() => isClickable && onProgressClick?.(idx)}
             onMouseEnter={(e) => {
               if (isClickable) {
-                e.currentTarget.style.opacity = '1';
-                e.currentTarget.style.transform = 'scaleY(1.1)';
+                e.currentTarget.style.opacity = "1";
+                e.currentTarget.style.transform = "scaleY(1.1)";
               }
             }}
             onMouseLeave={(e) => {
               if (isClickable) {
-                e.currentTarget.style.opacity = isCurrent ? '1' : '0.8';
-                e.currentTarget.style.transform = 'scaleY(1)';
+                e.currentTarget.style.opacity = isCurrent ? "1" : "0.8";
+                e.currentTarget.style.transform = "scaleY(1)";
               }
             }}
-            title={`Kérdés ${idx + 1}${isAnswered ? ' (megválaszolva)' : ''}${isCurrent ? ' (jelenlegi)' : ''}`}
+            title={`Kérdés ${idx + 1}${
+              isAnswered
+                ? isQuizSubmitted
+                  ? isCorrect
+                    ? " (helyes)"
+                    : " (helytelen)"
+                  : " (megválaszolva)"
+                : ""
+            }${isCurrent ? " (jelenlegi)" : ""}`}
           >
             {idx + 1}
           </div>

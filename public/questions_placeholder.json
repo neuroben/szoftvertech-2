@@ -388,7 +388,7 @@
   {
     "id": 40,
     "statement": "Mit lát az ábrán?",
-    "questionPicture": "./picutres/question_40.png",
+    "image": "question_40.png",
     "options": [
       {"text": "Kommunikációs diagramot, amin egy kliens szolgáltatást hív meg egy szerveren, az visszaigazolja, majd az a kapott eredményt visszaadja.", "correct": false},
       {"text": "Szekvencia diagramot.", "correct": true},
@@ -436,7 +436,7 @@
     {
     "id": 45,
     "statement": "Jelölje az ábrával kapcsolatos igaz állításokat!",
-    "questionPicture": "./picutres/question_45.png",
+    "image": "question_45.png",
     "options": [
       {"text": "Kommunikációs diagram látható, melyen amin egy kliens szolgáltatást hív meg egy szerveren, az visszaigazolja, majd az a kapott eredményt visszaadja.", "correct": true},
       {"text": "Kommunikációs diagram látható, melyen amin egy kliens szolgáltatást hív meg egy szerveren, majd az a kapott eredményt visszaadja.", "correct": false},
@@ -447,7 +447,7 @@
   {
     "id": 46,
     "statement": "Az alábbi ábra alapján jelölje az igaz állításokat!",
-    "questionPicture": "./picutres/question_46.png",
+    "image": "question_46.png",
     "options": [
       {"text": "Lesz olyan szerverre vonatkozó állapotgép, ahol az egyik állapot „várakozás” lesz.", "correct": true},
       {"text": "Lesz olyan kliensre vonatkozó állapotgép, ahol az egyik állapot „várakozás” lesz, ebből csak kivezető állapotátmenet lesz.", "correct": true},
@@ -614,9 +614,9 @@
   "statement": "Jelölje, mely ábrázolási módok szabványosak UML2-ben, állapotautomatákra!",
   "options": [
     {"text": "Egyik sem", "correct": false},
-    {"text": "A következő: ", "answerPicutre": "./picutres/answerPicture_61_1", "correct": true},
-    {"text": "A következő: ", "answerPicutre": "./picutres/answerPicture_61_2", "correct": true},
-    {"text": "A következő: ", "answerPicutre": "./picutres/answerPicture_61_3", "correct": true}
+    {"text": "A következő: ", "image": "answerPicture_61_1.png", "correct": true},
+    {"text": "A következő: ", "image": "answerPicture_61_2.png", "correct": true},
+    {"text": "A következő: ", "image": "answerPicture_61_3.png", "correct": true}
   ]
   },
   {
@@ -624,9 +624,9 @@
   "statement": "Jelölje, mely ábrázolási módok szabványosak UML2-ben, aktivitási diagramokra!",
   "options": [
     {"text": "Egyik sem", "correct": false},
-    {"text": "A következő: ", "answerPicutre": "./picutres/answerPicture_62_1", "correct": false},
-    {"text": "A következő: ", "answerPicutre": "./picutres/answerPicture_62_2", "correct": false},
-    {"text": "A következő: ", "answerPicutre": "./picutres/answerPicture_62_3", "correct": false}
+    {"text": "A következő: ", "image": "answerPicture_62_1.png", "correct": false},
+    {"text": "A következő: ", "image": "answerPicture_62_2.png", "correct": false},
+    {"text": "A következő: ", "image": "answerPicture_62_3.png", "correct": false}
   ]
   },
   {
@@ -643,9 +643,9 @@
   "statement": "Jelölje, mely ábrázolási módok szabványosak UML2-ben, aktivitási diagramokra!",
   "options": [
     {"text": "Egyik sem", "correct": false},
-    {"text": "Egyszerű kezdő állapot: ", "answerPicutre": "./picutres/answerPicture_65_1", "correct": true},
-    {"text": "Mély történeti állapot: ", "answerPicutre": "./picutres/answerPicture_62_2", "correct": false},
-    {"text": "Egyszerű történeti állapot: ", "answerPicutre": "./picutres/answerPicture_62_3", "correct": false}
+    {"text": "Egyszerű kezdő állapot: ", "image": "answerPicture_65_1.png", "correct": true},
+    {"text": "Mély történeti állapot: ", "image": "answerPicture_65_2.png", "correct": false},
+    {"text": "Egyszerű történeti állapot: ", "image": "answerPicture_65_3.png", "correct": false}
   ]
   },
   {

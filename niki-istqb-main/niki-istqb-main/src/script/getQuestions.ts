@@ -33,7 +33,7 @@ export async function loadQuestions(count: number): Promise<Question[]> {
 
   try {
     // Fallback a régi formátumra
-    const data = await fetch("/niki-istqb/data/Questions_save_cleaned.json").then((r) =>
+    const data = await fetch("/szoftvertech2/questions_placeholder.json").then((r) =>
       r.json()
     );
     const filtered = data.questions_full.filter(

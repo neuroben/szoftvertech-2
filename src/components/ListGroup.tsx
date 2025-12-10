@@ -1,8 +1,13 @@
+import "./ListGroup.css";
+
 interface Props {
   items: string[];
   selectedIndices: number[];
   setSelectedIndices: React.Dispatch<React.SetStateAction<number[]>>;
   onSelectItem: (item: string) => void;
+  optionImages?: (string | undefined)[]; // Képek az opciókhoz
+  correctOptions?: boolean[]; // Helyes válaszok jelzése
+  isQuizSubmitted?: boolean; // Kvíz leadva
 }
 
 function isTrueFalseItems(items: string[]): boolean {
@@ -13,7 +18,14 @@ function isTrueFalseItems(items: string[]): boolean {
   );
 }
 
-function ListGroup({ items, selectedIndices, setSelectedIndices }: Props) {
+function ListGroup({
+  items,
+  selectedIndices,
+  setSelectedIndices,
+  optionImages,
+  correctOptions,
+  isQuizSubmitted = false,
+}: Props) {
   // Egy index hozzáadása vagy eltávolítása a kijelöltek közül
   function toggleIndex(prev: number[], index: number) {
     if (prev.includes(index)) {
@@ -39,19 +51,46 @@ function ListGroup({ items, selectedIndices, setSelectedIndices }: Props) {
         items.length === 0 && <p>No item found</p>
       }
       <ul className="list-group">
-        {items.map((item, index) => (
-          <li
-            className={
-              (selectedIndices.includes(index)
-                ? "list-group-item active"
-                : "list-group-item") + " text-center"
-            }
-            key={item}
-            onClick={() => handleItemClick(index)}
-          >
-            {item}
-          </li>
-        ))}
+        {items.map((item, index) => {
+          // Szöveg színe leadás után
+          let textColor = "";
+          if (isQuizSubmitted && correctOptions) {
+            textColor = correctOptions[index] ? "text-success" : "text-danger";
+          }
+          
+          return (
+            <li
+              className={
+                (selectedIndices.includes(index)
+                  ? "list-group-item active"
+                  : "list-group-item") + " text-center cursor-pointer"
+              }
+              key={item}
+              onClick={() => handleItemClick(index)}
+              style={{
+                padding: "12px",
+                minHeight: optionImages?.[index] ? "200px" : "auto",
+              }}
+            >
+              {optionImages?.[index] && (
+                <div className="mb-2">
+                  <img
+                    src={`/szoftvertech2/pictures/${optionImages[index]}`}
+                    alt={`Opció ${index + 1} képe`}
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: "150px",
+                      objectFit: "contain",
+                    }}
+                  />
+                </div>
+              )}
+              <div className={textColor} style={{ fontWeight: isQuizSubmitted ? "bold" : "normal" }}>
+                {item}
+              </div>
+            </li>
+          );
+        })}
       </ul>
     </>
   );

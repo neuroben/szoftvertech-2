@@ -4,10 +4,7 @@ import Timer from "./components/Timer";
 import { useState, useCallback } from "react";
 import { loadQuestions } from "./script/getQuestions.ts";
 import { useEffect } from "react";
-import type {
-  Question,
-  MultiOption,
-} from "./types/questionTypes";
+import type { Question, MultiOption } from "./types/questionTypes";
 import Counter from "./components/Counter.tsx";
 import EndQuiz from "./components/EndQuiz.tsx";
 import { useSearchParams } from "react-router-dom";
@@ -24,6 +21,7 @@ function useQuizState(maxStatementNumber: number) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([]);
   const [userAnswers, setUserAnswers] = useState<number[][]>([]); // Felhasználó tényleges válaszai
   const [totalTime, setTotalTime] = useState(0);
+  const [isQuizSubmitted, setIsQuizSubmitted] = useState(false); // Kvíz leadva
 
   useEffect(() => {
     loadQuestions(maxStatementNumber).then((qs) => {
@@ -36,7 +34,20 @@ function useQuizState(maxStatementNumber: number) {
     });
   }, [maxStatementNumber]);
 
-  return { loading, progress, setProgress, questions, answers, setAnswers, userAnswers, setUserAnswers, totalTime, setTotalTime };
+  return {
+    loading,
+    progress,
+    setProgress,
+    questions,
+    answers,
+    setAnswers,
+    userAnswers,
+    setUserAnswers,
+    totalTime,
+    setTotalTime,
+    isQuizSubmitted,
+    setIsQuizSubmitted,
+  };
 }
 
 /**
@@ -45,25 +56,41 @@ function useQuizState(maxStatementNumber: number) {
 function Quiz() {
   const [searchParams] = useSearchParams();
   const maxStatementNumber = Number(searchParams.get("count")) || 5;
-  const { loading, progress, setProgress, questions, answers, setAnswers, userAnswers, setUserAnswers, totalTime, setTotalTime } =
-    useQuizState(maxStatementNumber);
+  const {
+    loading,
+    progress,
+    setProgress,
+    questions,
+    answers,
+    setAnswers,
+    userAnswers,
+    setUserAnswers,
+    totalTime,
+    setTotalTime,
+    isQuizSubmitted,
+    setIsQuizSubmitted,
+  } = useQuizState(maxStatementNumber);
 
   // Timer állapota - akkor indul el, amikor betöltötték a kérdéseket és még nem fejeződött be a kvíz
-  const isTimerRunning = !loading && questions.length > 0 && progress < questions.length;
+  const isTimerRunning =
+    !loading && questions.length > 0 && progress < questions.length;
 
-  const handleNextQuestion = (wasCorrect: boolean, selectedIndices: number[]) => {
+  const handleNextQuestion = (
+    wasCorrect: boolean,
+    selectedIndices: number[]
+  ) => {
     setAnswers((prev) => {
       const newAnswers = [...prev];
       newAnswers[progress] = wasCorrect; // A jelenlegi pozícióra írjuk
       return newAnswers;
     });
-    
+
     setUserAnswers((prev) => {
       const newUserAnswers = [...prev];
       newUserAnswers[progress] = selectedIndices; // Eltároljuk a tényleges választ
       return newUserAnswers;
     });
-    
+
     // Az utolsó kérdésnél nem lépünk automatikusan tovább
     if (progress < questions.length - 1) {
       setProgress(progress + 1);
@@ -72,6 +99,7 @@ function Quiz() {
 
   // Kvíz befejezése gomb kezelése
   const handleFinishQuiz = () => {
+    setIsQuizSubmitted(true); // Bejelöljük, hogy leadták a kvízt
     setProgress(questions.length); // Beállítjuk az EndQuiz megjelenítéséhez
   };
 
@@ -82,25 +110,30 @@ function Quiz() {
   };
 
   // Befejezés ellenőrzése - csak akkor fejezzük be, ha az összes kérdést megválaszoltuk
-  const isQuizFinished = answers.every(answer => answer !== null);
+  const isQuizFinished = answers.every((answer) => answer !== null);
 
   // A feldolgozó függvény memorizálása a szükségtelen újraszámítások elkerülése érdekében
   const parseQuestionOptions = useCallback(
     (question: Question | undefined): MultiOption[] => {
       if (!question) return [];
-      
+
       if ("options" in question && "correctAnswers" in question) {
         // Ez az új ExamQuestion formátum
         const options = question.options.map((text, index) => ({
           text,
           correct: question.correctAnswers.includes(index),
         }));
-        
+
         return options;
-      } else if ("options" in question && Array.isArray(question.options) && question.options.length > 0 && typeof question.options[0] === "object") {
+      } else if (
+        "options" in question &&
+        Array.isArray(question.options) &&
+        question.options.length > 0 &&
+        typeof question.options[0] === "object"
+      ) {
         // Ez a régi MultiQuestion formátum
         const options = question.options as MultiOption[];
-        
+
         return options;
       } else if ("correct_answer" in question) {
         // Ez a régi SimpleQuestion formátum
@@ -115,17 +148,25 @@ function Quiz() {
   );
 
   // Segédfüggvény annak ellenőrzésére, hogy több helyes válasz van-e
-  const hasMultipleCorrectAnswers = useCallback((question: Question | undefined): boolean => {
-    if (!question) return false;
-    
-    if ("options" in question && "correctAnswers" in question) {
-      return question.correctAnswers.length > 1;
-    } else if ("options" in question && Array.isArray(question.options) && question.options.length > 0 && typeof question.options[0] === "object") {
-      const options = question.options as MultiOption[];
-      return options.filter(opt => opt.correct).length > 1;
-    }
-    return false;
-  }, []);
+  const hasMultipleCorrectAnswers = useCallback(
+    (question: Question | undefined): boolean => {
+      if (!question) return false;
+
+      if ("options" in question && "correctAnswers" in question) {
+        return question.correctAnswers.length > 1;
+      } else if (
+        "options" in question &&
+        Array.isArray(question.options) &&
+        question.options.length > 0 &&
+        typeof question.options[0] === "object"
+      ) {
+        const options = question.options as MultiOption[];
+        return options.filter((opt) => opt.correct).length > 1;
+      }
+      return false;
+    },
+    []
+  );
 
   // Segédfüggvény a kérdés szövegének lekérdezéséhez
   const getQuestionText = (question: Question | undefined): string => {
@@ -158,7 +199,7 @@ function Quiz() {
       if (!currentQuestion) {
         return <EndQuiz answers={answers} totalTime={totalTime} />;
       }
-      
+
       return (
         <>
           <QuizCard
@@ -167,9 +208,11 @@ function Quiz() {
             isMultiple={hasMultipleCorrectAnswers(currentQuestion)}
             onNext={handleNextQuestion}
             previousSelection={userAnswers[progress]} // Átadjuk a korábbi választást
+            questionImage={currentQuestion.image} // Kérdéshez tartozó kép
+            isQuizSubmitted={isQuizSubmitted} // Kvíz leadva
           />
           <Counter counter={progress} maxStaementNumber={maxStatementNumber} />
-          
+
           {/* Leadás gomb megjelenítése, ha minden kérdésre van válasz */}
           {isQuizFinished && (
             <div className="text-center mt-4">
@@ -197,7 +240,7 @@ function Quiz() {
         onTimeUpdate={setTotalTime}
         className="position-fixed top-0 end-0 m-3 bg-white text-dark rounded p-2 shadow border"
       />
-      
+
       <div className="row">
         <div
           className="col-md-10 mx-auto"
@@ -212,6 +255,7 @@ function Quiz() {
         statementNumber={maxStatementNumber}
         progress={progress}
         answer={answers}
+        isQuizSubmitted={isQuizSubmitted}
         onProgressClick={handleProgressClick}
       />
     </div>

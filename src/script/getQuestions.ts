@@ -1,6 +1,5 @@
-import type { Question, ExamQuestion } from "../types/questionTypes";
+import type { Question } from "../types/questionTypes";
 
-// Feltételezzük, hogy van egy shuffle függvényed:
 function shuffle<T>(array: T[]): T[] {
   return array
     .map((value) => ({ value, sort: Math.random() }))
@@ -10,43 +9,37 @@ function shuffle<T>(array: T[]): T[] {
 
 export async function loadQuestions(count: number): Promise<Question[]> {
   try {
-    // Először próbáljuk az új exam_questions.json formátumot
-    const examData = await fetch("/niki-istqb/data/exam_questions.json").then((r) =>
+    const data = await fetch("/szoftvertech2/questions_placeholder.json").then((r) =>
       r.json()
     );
-    
-    if (Array.isArray(examData) && examData.length > 0) {
-      // Ez az új formátum
-      const filtered = examData.filter(
+
+    if (Array.isArray(data) && data.length > 0) {
+      const filtered = data.filter(
         (q: any) =>
-          q.questionText &&
+          q.id &&
+          q.statement &&
           Array.isArray(q.options) &&
-          Array.isArray(q.correctAnswers)
+          q.options.length > 0
       );
+
       return shuffle(filtered)
         .slice(0, count)
-        .map((q: any) => q as ExamQuestion);
+        .map((q: any) => ({
+          id: q.id,
+          statement: q.statement,
+          options: q.options.map((opt: any) => ({
+            text: opt.text,
+            correct: opt.correct,
+            image: opt.image // Opció képe, ha van
+          })),
+          image: q.image, // Kérdés képe, ha van
+          correct_answer: undefined
+        } as Question));
     }
-  } catch (e) {
-    console.log("Új formátum nem elérhető, próbáljuk a régi formátumot:", e);
-  }
-
-  try {
-    // Fallback a régi formátumra
-    const data = await fetch("/niki-istqb/data/Questions_save_cleaned.json").then((r) =>
-      r.json()
-    );
-    const filtered = data.questions_full.filter(
-      (q: any) =>
-        q.statement &&
-        (typeof q.correct_answer !== "undefined" || Array.isArray(q.options))
-    );
-    return shuffle(filtered)
-      .slice(0, count)
-      .map((q: any) => q as Question);
   } catch (e) {
     console.error("Hiba történt a kérdések betöltésekor:", e);
     alert("Nem sikerült betölteni a kérdésbankot! Nézd meg a konzolt a részletekért.");
-    return [];
   }
+
+  return [];
 }

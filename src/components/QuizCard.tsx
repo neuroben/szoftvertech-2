@@ -1,5 +1,6 @@
 import ListGroup from "./ListGroup";
 import { useState, useEffect } from "react";
+import "./QuizCard.css";
 
 import type { MultiOption } from "../types/questionTypes.ts";
 
@@ -9,9 +10,19 @@ interface Props {
   isMultiple: boolean;
   onNext: (wasCorrect: boolean, selectedIndices: number[]) => void;
   previousSelection?: number[]; // Felhasználó korábbi választása
+  questionImage?: string; // Kérdéshez tartozó kép
+  isQuizSubmitted?: boolean; // Kvíz leadva
 }
 
-function QuizCard({ statement, options, isMultiple, onNext, previousSelection }: Props) {
+function QuizCard({
+  statement,
+  options,
+  isMultiple,
+  onNext,
+  previousSelection,
+  questionImage,
+  isQuizSubmitted = false,
+}: Props) {
   const [selectedIndices, setSelectedIndices] = useState<number[]>([]);
   //const [correctAnswer, setCorrectAnswer] = useState(false);
 
@@ -30,7 +41,7 @@ function QuizCard({ statement, options, isMultiple, onNext, previousSelection }:
 
   // Függvény a statement formázásához - \n karaktereket <br> tagekké alakítja
   const formatStatement = (text: string) => {
-    return text.split('\n').map((line, index, array) => (
+    return text.split("\n").map((line, index, array) => (
       <span key={index}>
         {line}
         {index < array.length - 1 && <br />}
@@ -73,6 +84,19 @@ function QuizCard({ statement, options, isMultiple, onNext, previousSelection }:
     <div className="card mb-0 rounded-top  shadow-sm">
       <div className="card-header py-3">
         <h4 className="my-0 fw-normal">{formatStatement(statement)}</h4>
+        {questionImage && (
+          <div className="mt-3 text-center">
+            <img
+              src={`/szoftvertech2/pictures/${questionImage}`}
+              alt="Kérdéshez tartozó kép"
+              style={{
+                maxWidth: "100%",
+                maxHeight: "300px",
+                objectFit: "contain",
+              }}
+            />
+          </div>
+        )}
         {isMultiple && (
           <div className="mt-2">
             <small className="text-muted">Több helyes válasz lehetséges</small>
@@ -87,6 +111,9 @@ function QuizCard({ statement, options, isMultiple, onNext, previousSelection }:
           onSelectItem={(item) => {
             console.log("Selected:", item);
           }}
+          optionImages={options.map((opt) => opt.image)}
+          correctOptions={options.map((opt) => opt.correct)}
+          isQuizSubmitted={isQuizSubmitted}
         />
         <button
           type="button"
